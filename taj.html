@@ -1,0 +1,351 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Taj Biryani Restaurant</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f5f0;
+        }
+
+        /* NAVBAR */
+        nav {
+            background-color: #222;
+            color: white;
+            padding: 18px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            color: #f5b400;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #f5b400;
+        }
+
+        /* HERO */
+        .hero {
+            height: 500px;
+            background-image: url("biryani.jpg");
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-content {
+            background: rgba(0, 0, 0, 0.65);
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            background-color: #f5b400;
+            color: #222;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* ABOUT */
+        .section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        /* MENU */
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .food {
+            background-color: white;
+            width: 280px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        }
+
+        .food img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .food h3 {
+            margin: 15px 0 8px;
+        }
+
+        .price {
+            color: #d18d00;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        /* SPECIALITIES */
+        .special {
+            background-color: #222;
+            color: white;
+        }
+
+        .special-box {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .special-item {
+            width: 200px;
+            padding: 25px;
+        }
+
+        .special-item h3 {
+            margin: 10px;
+            color: #f5b400;
+        }
+
+        /* CONTACT */
+        .contact {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .contact p {
+            margin: 10px;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* MOBILE */
+        @media(max-width: 600px) {
+
+            nav {
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            nav div {
+                margin-top: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .section {
+                padding: 30px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav>
+
+        <h2>🍛 TAJ BIRYANI</h2>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </nav>
+
+
+    <!-- HOME -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>TAJ Biryani</h1>
+
+            <p>Authentic Taste • Fresh Ingredients • Royal Flavour</p>
+
+            <a href="#menu" class="btn">View Menu</a>
+
+        </diV>
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="section" id="about">
+
+        <h2>About Us</h2>
+
+        <p>
+            Welcome to Taj  Biryani!
+            We serve delicious and authentic biryani
+            prepared with fresh ingredients and special
+            spices. Come and enjoy the real taste of biryani.
+        </p>
+
+    </section>
+
+
+    <!-- MENU -->
+
+    <section class="section" id="menu">
+
+        <h2>Our Menu</h2>
+
+        <div class="menu">
+
+
+            <div class="food">
+
+                <img src="https://norecipes.com/wp-content/uploads/2017/05/chicken-biryani-005.jpg"
+
+                <h3>Chicken Biryani</h3>
+
+                <p>Authentic aromatic chicken biryani.</p>
+
+                <div class="price">₹1OO</div>
+
+                <a href="#contact" class="btn">Order Now</a>
+
+            </div>
+
+
+            
+
+
+        </div>
+
+    </section>
+
+
+    <!-- SPECIALITIES -->
+
+    <section class="section special">
+
+        <h2>Why Choose Us?</h2>
+
+        <div class="special-box">
+
+            <div class="special-item">
+                <h1>🍚</h1>
+                <h3>Authentic Biryani</h3>
+                <p>Traditional recipes and spices.</p>
+            </div>
+
+            <div class="special-item">
+                <h1>🌶️</h1>
+                <h3>Fresh Ingredients</h3>
+                <p>Fresh ingredients every day.</p>
+            </div>
+
+            <div class="special-item">
+                <h1>👨‍🍳</h1>
+                <h3>Expert Chefs</h3>
+                <p>Prepared by experienced chefs.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="contact" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>📍 Your Restaurant Address</p>
+        <p>BAIL JODI CHOWK CHIKHLI DISTRICT BULDHANA.</p>
+        <p>OWNER : SHAIKH REHAN </p>
+
+        <p>📞 +91 7218735362</p>
+
+        <p>🕐 Open: 10:00 AM - 11:00 PM</p>
+
+        <br>
+
+        <a href="tel:+917215735362" class="btn">
+            Call & Order
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Taj Biryani Restaurant.
+        </p>
+
+    </footer>
+
+</body>
+</html>
